@@ -1,48 +1,47 @@
 
 .store-cards-container {
-    display: flex; 
-    justify-content: center;
-    flex-wrap: wrap; 
-  }
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.store-card {
+  background: linear-gradient(to right,  #828e8c, #000000);  
+  color: white;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px;  
+  transition: transform 0.2s ease-in-out;   
+}
+
+.store-card:hover {
+  transform: scale(1.05); 
+}
+
+.store-card .bi {
+  font-size: 1.5rem; 
+}
+
+.store-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
   
-  .store-card {
-    background: linear-gradient(to right,  #828e8c, #000000);  
-    color: white;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    border-radius: 10px;  
-    transition: transform 0.2s ease-in-out;   
-  }
-  
-  .store-card:hover {
-    transform: scale(1.05); 
-  }
-  
-  .store-card .bi {
-    font-size: 1.5rem; 
-  }
-  
-  .store-card .card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    
-  }
-  
-  .store-card .card-subtitle {
-    font-size: 1rem;
-    color: #ffffff; 
-  }
-  
-  .store-card .card-text i {
-    font-size: 1rem;
-    margin-right: 5px;
-  }
-  
-  .store-card .card-text {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-  
-  .store-card .card-body {
-    padding: 1.5rem;
-  }
-  
+}
+
+.store-card .card-subtitle {
+  font-size: 1rem;
+  color: #ffffff; 
+}
+
+.store-card .card-text i {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.store-card .card-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.store-card .card-body {
+  padding: 1.5rem;
+}
