@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(to right,  #687171, #000000); /* Two-color gradient */
+
+  
+  font-family: 'Roboto', sans-serif;
+  color: #bc4343;
+}
+
+.container {
+  max-width: 900px;
+}
+
+.card {
+  border: 1px solid #2e2e2e;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card i {
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.form-control, .form-select {
+  background-color: #2e2e2e;
+  color: #ffffff;
+  height: calc(2.5rem + 2px);
+}
+
+.btn-light {
+  background-color: #6c757d;
+  border: none;
+  color: #fff;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.uploaded-card {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid #444;
+}
+.black {
+  color: black;
+  font-style: oblique;
+}
+
+.grey {
+  color: grey;
+  font-style: italic;
+}
+
+.white {
+  color: white;
+  font-style: italic;
+}
+
