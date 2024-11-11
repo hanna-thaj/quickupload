@@ -1,6 +1,5 @@
 body {
-  background: linear-gradient(to right,  #687171, #000000); /* Two-color gradient */
-
+  background: linear-gradient(to right,  #687171, #000000);  
   
   font-family: 'Roboto', sans-serif;
   color: #bc4343;

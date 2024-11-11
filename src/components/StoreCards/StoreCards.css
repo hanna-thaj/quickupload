@@ -1,24 +1,24 @@
 
 .store-cards-container {
-    display: flex; /* helps to arrng the child elmnt in a row by def */
+    display: flex; 
     justify-content: center;
-    flex-wrap: wrap; /* wrap to the nxt line (helps in smaller screens also */
+    flex-wrap: wrap; 
   }
   
   .store-card {
     background: linear-gradient(to right,  #828e8c, #000000);  
-    color: white;  /* White text for contrast */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Soft shadow for cards */
+    color: white;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     border-radius: 10px;  
     transition: transform 0.2s ease-in-out;   
   }
   
   .store-card:hover {
-    transform: scale(1.05);  /* Scale the card on hover */
+    transform: scale(1.05); 
   }
   
   .store-card .bi {
-    font-size: 1.5rem; /*1.5 times the default font size.*/
+    font-size: 1.5rem; 
   }
   
   .store-card .card-title {

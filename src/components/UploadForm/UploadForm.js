@@ -11,24 +11,24 @@ function UploadForm() {
   const [file, setFile] = useState(null);
   const [mediaUrl, setMediaUrl] = useState(null);
   const [showAlert, setShowAlert] = useState(false);
-  const [uploadedProducts, setUploadedProducts] = useState([]); // Array to store multiple uploaded products
+  const [uploadedProducts, setUploadedProducts] = useState([]);  
 
   const handleSubmit = (e) => {
-    e.preventDefault(); //Prevents the page from refreshing on form submission.
+    e.preventDefault();  
     if (file) {
-      const url = URL.createObjectURL(file); //Creates a temporary URL for the uploaded file to display immediately.
-      const newProduct = { store, category, mediaUrl: url, fileType: file.type };  // Store file type
-      setUploadedProducts([...uploadedProducts, newProduct]); // Add the new product to the array
+      const url = URL.createObjectURL(file); 
+      const newProduct = { store, category, mediaUrl: url, fileType: file.type };   
+      setUploadedProducts([...uploadedProducts, newProduct]);  
       setShowAlert(true);
       setTimeout(() => setShowAlert(false), 3000);
-      // Reset the form fields
+      
       setStore('');
       setCategory('');
       setFile(null);
       setMediaUrl(null);
     }
   };
-// form components handles user inputs.
+ 
   return (
     <div className="upload-container">
       <div className="upload-form">
@@ -103,7 +103,7 @@ function UploadForm() {
           </Alert>
         )}
 
-        {/* Display all uploaded products */}
+         
         <div className="uploaded-products">
           {uploadedProducts.map((product, index) => (
             <Card
